@@ -1,0 +1,306 @@
+.about-section {
+    background: linear-gradient(135deg, var(--darker-bg) 0%, var(--dark-bg) 50%, var(--darker-bg) 100%);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .about-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="%23ff1493" stroke-width="0.5" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+    opacity: 0.3;
+  }
+  
+  .section-title {
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .title-underline {
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(45deg, var(--primary-pink), var(--secondary-pink));
+    margin: 0 auto 3rem;
+    border-radius: 2px;
+    position: relative;
+  }
+  
+  .title-underline::after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -10px;
+    right: -10px;
+    bottom: -2px;
+    background: linear-gradient(45deg, var(--neon-pink), var(--primary-pink));
+    border-radius: 4px;
+    z-index: -1;
+    opacity: 0.5;
+    animation: pulse 2s ease-in-out infinite;
+  }
+  
+  .about-content {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .about-subtitle {
+    font-size: 1.8rem;
+    color: var(--secondary-pink);
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+  }
+  
+  .about-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.85);
+    margin-bottom: 1.5rem;
+    text-align: justify;
+  }
+  
+  .about-stats {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .stat-item {
+    text-align: center;
+    flex: 1;
+    min-width: 120px;
+  }
+  
+  .stat-number {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 900;
+    font-family: 'Orbitron', monospace;
+    background: linear-gradient(45deg, var(--primary-pink), var(--secondary-pink));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 0.5rem;
+  }
+  
+  .stat-label {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  /* Code Editor Visual */
+  .about-visual {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .code-editor {
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 20, 147, 0.3);
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+  }
+  
+  .editor-header {
+    background: rgba(255, 20, 147, 0.1);
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(255, 20, 147, 0.2);
+  }
+  
+  .editor-controls {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .control {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+  }
+  
+  .control.close { background: #ff5f57; }
+  .control.minimize { background: #ffbd2e; }
+  .control.maximize { background: #28ca42; }
+  
+  .file-name {
+    color: var(--secondary-pink);
+    font-family: 'Orbitron', monospace;
+    font-size: 0.9rem;
+  }
+  
+  .editor-content {
+    padding: 20px;
+    font-family: 'Courier New', monospace;
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+  
+  .code-line {
+    margin-bottom: 8px;
+    position: relative;
+  }
+  
+  .code-line.indent {
+    padding-left: 20px;
+  }
+  
+  .keyword { color: #ff79c6; }
+  .variable { color: #8be9fd; }
+  .property { color: #50fa7b; }
+  .string { color: #f1fa8c; }
+  .operator { color: #ff79c6; }
+  .bracket { color: #bd93f9; }
+  
+  .code-line::before {
+    content: counter(line-number);
+    counter-increment: line-number;
+    position: absolute;
+    left: -40px;
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 0.8rem;
+    width: 30px;
+    text-align: right;
+  }
+  
+  .editor-content {
+    counter-reset: line-number;
+  }
+  
+  /* Values Section */
+  .values-title {
+    font-size: 2.2rem;
+    color: var(--white);
+    font-weight: 600;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .value-card {
+    padding: 2rem 1.5rem;
+    text-align: center;
+    height: 100%;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .value-icon {
+    font-size: 3rem;
+    color: var(--primary-pink);
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .value-title {
+    font-size: 1.3rem;
+    color: var(--white);
+    margin-bottom: 1rem;
+    font-weight: 600;
+  }
+  
+  .value-description {
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.6;
+    font-size: 0.95rem;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 991px) {
+    .section-title {
+      font-size: 2.5rem;
+    }
+    
+    .about-subtitle {
+      font-size: 1.5rem;
+    }
+    
+    .about-stats {
+      justify-content: center;
+      gap: 2rem;
+    }
+    
+    .stat-item {
+      min-width: 100px;
+    }
+    
+    .code-editor {
+      margin-top: 2rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .section-title {
+      font-size: 2rem;
+    }
+    
+    .about-subtitle {
+      font-size: 1.3rem;
+    }
+    
+    .about-text {
+      font-size: 1rem;
+      text-align: left;
+    }
+    
+    .stat-number {
+      font-size: 2rem;
+    }
+    
+    .editor-content {
+      font-size: 0.85rem;
+      padding: 15px;
+    }
+    
+    .values-title {
+      font-size: 1.8rem;
+    }
+    
+    .value-card {
+      padding: 1.5rem 1rem;
+    }
+    
+    .value-icon {
+      font-size: 2.5rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .about-stats {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .stat-item {
+      margin-bottom: 1rem;
+    }
+    
+    .editor-header {
+      padding: 10px 15px;
+    }
+    
+    .file-name {
+      font-size: 0.8rem;
+    }
+    
+    .code-line.indent {
+      padding-left: 10px;
+    }
+  }
+  

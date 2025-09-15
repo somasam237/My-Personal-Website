@@ -1,0 +1,144 @@
+{
+  "nav": {
+    "home": "Start",
+    "about": "Über mich",
+    "skills": "Fähigkeiten",
+    "projects": "Projekte",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "greeting": "Hallo, ich bin",
+    "name": "Samyra Tafawoung",
+    "title": "Student und Full Stack Entwicklerin",
+    "subtitle": "Meine Zukunft bauen, eine Codezeile nach der anderen",
+    "description": "Leidenschaftliche Full-Stack-Entwicklerin mit Expertise in React.js, Express.js und modernen Web-Technologien. Ich erstelle innovative, skalierbare Lösungen, die Design und Funktionalität verbinden.",
+    "viewWork": "Meine Arbeit Ansehen",
+    "getInTouch": "Kontakt Aufnehmen",
+    "scrollToExplore": "Scrollen zum Erkunden"
+  },
+  "about": {
+    "title": "Über",
+    "me": "Mich",
+    "subtitle": "Student und Full Stack Entwicklerin & Tech-Enthusiastin",
+    "description1": "Mit einer Leidenschaft für die Entwicklung innovativer digitaler Lösungen spezialisiere ich mich auf Full-Stack-Webentwicklung mit modernen Technologien wie React.js, Express.js und Node.js. Meine Reise in der Softwareentwicklung wurde von Neugier und dem Wunsch angetrieben, Anwendungen zu erstellen, die einen echten Unterschied machen.",
+    "description2": "Ich liebe Herausforderungen und arbeite gerne an Projekten, die die Grenzen des Möglichen erweitern. Von responsiven Frontend-Interfaces bis hin zu robusten Backend-Systemen bringe ich Ideen mit sauberem, effizientem Code und Liebe zum Detail zum Leben.",
+    "stats": {
+      "experience": "Jahre Erfahrung",
+      "projects": "Abgeschlossene Projekte",
+      "satisfaction": "Freundezufriedenheit"
+    },
+    "values": {
+      "title": "Meine Grundwerte",
+      "cleanCode": {
+        "title": "Sauberer Code",
+        "description": "Ich glaube an das Schreiben von sauberem, wartbarem und skalierbarem Code, der dem Test der Zeit standhält."
+      },
+      "performance": {
+        "title": "Leistung",
+        "description": "Die Optimierung von Anwendungen für Geschwindigkeit und Effizienz steht im Kern meiner Entwicklungsphilosophie."
+      },
+      "innovation": {
+        "title": "Innovation",
+        "description": "Immer neue Technologien und Methoden erkunden, um modernste Lösungen zu schaffen."
+      },
+      "collaboration": {
+        "title": "Zusammenarbeit",
+        "description": "Effektiv mit Teams und Stakeholdern arbeiten, um außergewöhnliche Benutzererfahrungen zu liefern."
+      }
+    }
+  },
+  "skills": {
+    "title": "Meine",
+    "skills": "Fähigkeiten",
+    "subtitle": "Technologien und Tools, die ich verwende, um Ideen zum Leben zu erwecken",
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "tools": "Tools & Andere"
+    },
+    "summary": {
+      "title": "Immer am Lernen",
+      "description": "Technologie entwickelt sich schnell, und ich auch. Ich erkunde ständig neue Frameworks, Tools und Best Practices, um an der Spitze der Webentwicklung zu bleiben. Derzeit vertiefe ich mich in Cloud-Technologien und Microservices-Architektur.",
+      "learning": "Kontinuierliches Lernen"
+    }
+  },
+  "projects": {
+    "title": "Meine",
+    "projects": "Projekte",
+    "subtitle": "Erkunden Sie meine neuesten Arbeiten und kreativen Lösungen",
+    "filters": {
+      "all": "Alle Projekte",
+      "fullstack": "Full Stack",
+      "frontend": "Frontend",
+      "backend": "Backend"
+    },
+    "items": {
+      "ecommerce": {
+        "title": "E-Commerce Plattform",
+        "description": "Full-Stack E-Commerce-Lösung mit React, Node.js und MongoDB. Beinhaltet Benutzerauthentifizierung, Zahlungsabwicklung und Admin-Dashboard."
+      },
+      "taskManager": {
+        "title": "Aufgabenverwaltungs-App",
+        "description": "Kollaborative Aufgabenverwaltungsanwendung mit Echtzeit-Updates mit Socket.io. Erstellt mit React und Express."
+      },
+      "portfolio": {
+        "title": "Portfolio Dashboard",
+        "description": "Modernes Portfolio-Dashboard mit Datenvisualisierung und Analysen. Erstellt mit React und Chart.js."
+      },
+      "restApi": {
+        "title": "REST API Service",
+        "description": "Skalierbare REST API mit Authentifizierung, Rate Limiting und umfassender Dokumentation. Erstellt mit Express und MongoDB."
+      },
+      "weather": {
+        "title": "Wetter App",
+        "description": "Schöne Wetteranwendung mit standortbasierten Vorhersagen und interaktiven Karten. Responsives Design für alle Geräte."
+      },
+      "chat": {
+        "title": "Chat Anwendung",
+        "description": "Echtzeit-Chat-Anwendung mit privaten Nachrichten, Gruppenchats und Dateiaustausch. Erstellt mit Socket.io und React."
+      }
+    },
+    "buttons": {
+      "code": "Code",
+      "live": "Live"
+    },
+    "cta": {
+      "title": "Interessiert an einer Zusammenarbeit?",
+      "description": "Ich bin immer offen für Diskussionen über neue Möglichkeiten und aufregende Projekte.",
+      "button": "Kontakt Aufnehmen"
+    }
+  },
+  "contact": {
+    "title": "Kontakt",
+    "touch": "Aufnehmen",
+    "subtitle": "Bereit, Ihr nächstes Projekt zu starten? Lassen Sie uns zusammenarbeiten, um etwas Erstaunliches zu schaffen!",
+    "info": {
+      "title": "Lassen Sie uns verbinden",
+      "description": "Ich bin immer begeistert, über neue Möglichkeiten, kreative Projekte zu diskutieren oder einfach über Technologie und Entwicklung zu plaudern.",
+      "email": "Email",
+      "phone": "Telefon",
+      "location": "Standort"
+    },
+    "social": {
+      "title": "Folgen Sie mir"
+    },
+    "form": {
+      "title": "Senden Sie mir eine Nachricht",
+      "name": "Vollständiger Name",
+      "namePlaceholder": "Ihr vollständiger Name",
+      "email": "Email-Adresse",
+      "emailPlaceholder": "ihre.email@beispiel.com",
+      "subject": "Betreff",
+      "subjectPlaceholder": "Worum geht es?",
+      "message": "Nachricht",
+      "messagePlaceholder": "Erzählen Sie mir von Ihrem Projekt oder sagen Sie einfach Hallo!",
+      "sending": "Wird gesendet...",
+      "send": "Nachricht Senden",
+      "success": "Nachricht erfolgreich gesendet! Ich werde mich bald bei Ihnen melden."
+    },
+    "footer": {
+      "built": "Erstellt mit ❤️ unter Verwendung von React.js, Bootstrap und viel Kreativität",
+      "copyright": "© 2024 Samyra. Alle Rechte vorbehalten."
+    }
+  }
+}

@@ -1,0 +1,128 @@
+.futuristic-navbar {
+    background: rgba(10, 10, 10, 0.95);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(255, 20, 147, 0.3);
+    transition: all 0.3s ease;
+    padding: 15px 0;
+  }
+  
+  .futuristic-navbar.scrolled {
+    background: rgba(0, 0, 0, 0.98);
+    padding: 10px 0;
+    box-shadow: 0 2px 20px rgba(255, 20, 147, 0.3);
+  }
+  
+  .brand-logo {
+    text-decoration: none;
+    color: var(--white) !important;
+  }
+  
+  .brand-logo:hover {
+    text-decoration: none;
+    color: var(--white) !important;
+  }
+  
+  .brand-icon {
+    font-size: 2rem;
+    color: var(--primary-pink);
+    margin-right: 10px;
+  }
+  
+  .brand-text {
+    font-family: 'Orbitron', monospace;
+    font-size: 1.8rem;
+    font-weight: 900;
+    background: linear-gradient(45deg, var(--primary-pink), var(--secondary-pink));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 10px rgba(255, 20, 147, 0.5);
+  }
+  
+  .nav-item {
+    font-family: 'Orbitron', monospace;
+    font-weight: 600;
+    color: var(--white) !important;
+    margin: 0 15px;
+    padding: 10px 0 !important;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+  }
+  
+  .nav-item::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(45deg, var(--primary-pink), var(--secondary-pink));
+    transition: width 0.3s ease;
+  }
+  
+  .nav-item:hover {
+    color: var(--primary-pink) !important;
+    text-shadow: 0 0 10px rgba(255, 20, 147, 0.5);
+  }
+  
+  .nav-item:hover::before {
+    width: 100%;
+  }
+  
+  .custom-toggler {
+    border: 2px solid var(--primary-pink);
+    background: transparent;
+    color: var(--primary-pink);
+    font-size: 1.2rem;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  .custom-toggler:hover {
+    background: var(--primary-pink);
+    color: var(--white);
+    box-shadow: 0 0 15px rgba(255, 20, 147, 0.5);
+  }
+  
+  .custom-toggler:focus {
+    box-shadow: 0 0 15px rgba(255, 20, 147, 0.7);
+  }
+  
+  /* Mobile Responsive */
+  @media (max-width: 991px) {
+    .navbar-collapse {
+      background: rgba(0, 0, 0, 0.95);
+      margin-top: 15px;
+      padding: 20px;
+      border-radius: 10px;
+      border: 1px solid rgba(255, 20, 147, 0.3);
+    }
+    
+    .nav-item {
+      margin: 5px 0;
+      text-align: center;
+    }
+    
+    .brand-text {
+      font-size: 1.5rem;
+    }
+    
+    .brand-icon {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .brand-text {
+      font-size: 1.3rem;
+    }
+    
+    .brand-icon {
+      font-size: 1.3rem;
+      margin-right: 5px;
+    }
+  }
+  

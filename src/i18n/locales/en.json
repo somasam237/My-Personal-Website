@@ -1,0 +1,144 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Welcome To My World!, I'm",
+    "name": "Samyra",
+    "title": "Student and Full Stack Developer",
+    "subtitle": "Building My tomorrow, one line of code at a time",
+    "description": "Passionate full-stack developer with Knowledge in React.js, Express.js, and modern web technologies. I create innovative, scalable solutions that bridge the gap between design and functionality.",
+    "viewWork": "View My Work",
+    "getInTouch": "Get In Touch",
+    "scrollToExplore": "Scroll to explore"
+  },
+  "about": {
+    "title": "Meet",
+    "me": "Me",
+    "subtitle": "Student and Full Stack Developer & Tech Enthusiast",
+    "description1": "First of all, thanks for landing on my personal Website and for wanting to know more about me. I Love Computer Science And Programming has alwaays been my passion since i saw what we could do with a IDE and a computer",
+    "description2": "I thrive on challenges and enjoy working on projects that push the boundaries of what's possible. From responsive front-end interfaces to robust back-end systems, I bring ideas to life with clean, efficient code and attention to detail.",
+    "stats": {
+      "experience": "Years Experience",
+      "projects": "Projects Completed",
+      "satisfaction": "Friend Feedback"
+    },
+    "values": {
+      "title": "My Core Values",
+      "cleanCode": {
+        "title": "Clean Code",
+        "description": "I believe in writing clean, maintainable, and scalable code that stands the test of time."
+      },
+      "performance": {
+        "title": "Performance",
+        "description": "Optimizing applications for speed and efficiency is at the core of my development philosophy."
+      },
+      "innovation": {
+        "title": "Innovation",
+        "description": "Always exploring new technologies and methodologies to create cutting-edge solutions."
+      },
+      "collaboration": {
+        "title": "Collaboration",
+        "description": "Working effectively with teams and stakeholders to deliver exceptional user experiences."
+      }
+    }
+  },
+  "skills": {
+    "title": "My",
+    "skills": "Skills",
+    "subtitle": "Technologies and tools I use to bring ideas to life",
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "tools": "Tools & Others"
+    },
+    "summary": {
+      "title": "Always Learning",
+      "description": "Technology evolves rapidly, and so do I. I'm constantly exploring new frameworks, tools, and best practices to stay at the forefront of web development. Currently diving deeper into cloud technologies and microservices architecture.",
+      "learning": "Continuous Learning"
+    }
+  },
+  "projects": {
+    "title": "My",
+    "projects": "Projects",
+    "subtitle": "Explore my latest work and creative solutions",
+    "filters": {
+      "all": "All Projects",
+      "fullstack": "Full Stack",
+      "frontend": "Frontend",
+      "backend": "Backend"
+    },
+    "items": {
+      "ecommerce": {
+        "title": "E-Commerce Platform",
+        "description": "Full-stack e-commerce solution with React, Node.js, and MongoDB. Features include user authentication, payment processing, and admin dashboard."
+      },
+      "taskManager": {
+        "title": "Task Management App",
+        "description": "Collaborative task management application with real-time updates using Socket.io. Built with React and Express."
+      },
+      "portfolio": {
+        "title": "Portfolio Dashboard",
+        "description": "Modern portfolio dashboard with data visualization and analytics. Built with React and Chart.js."
+      },
+      "restApi": {
+        "title": "REST API Service",
+        "description": "Scalable REST API with authentication, rate limiting, and comprehensive documentation. Built with Express and MongoDB."
+      },
+      "weather": {
+        "title": "Weather App",
+        "description": "Beautiful weather application with location-based forecasts and interactive maps. Responsive design for all devices."
+      },
+      "chat": {
+        "title": "Chat Application",
+        "description": "Real-time chat application with private messaging, group chats, and file sharing. Built with Socket.io and React."
+      }
+    },
+    "buttons": {
+      "code": "Code",
+      "live": "Live"
+    },
+    "cta": {
+      "title": "Interested in working together?",
+      "description": "I'm always open to discussing new opportunities and exciting projects.",
+      "button": "Get In Touch"
+    }
+  },
+  "contact": {
+    "title": "Get In",
+    "touch": "Touch",
+    "subtitle": "Ready to start your next project? Let's work together to create something amazing!",
+    "info": {
+      "title": "Let's Connect",
+      "description": "I'm always excited to discuss new opportunities, creative projects, or just have a chat about technology and development.",
+      "email": "Email",
+      "phone": "Phone",
+      "location": "Location"
+    },
+    "social": {
+      "title": "Follow Me"
+    },
+    "form": {
+      "title": "Send Me a Message",
+      "name": "Full Name",
+      "namePlaceholder": "Your full name",
+      "email": "Email Address",
+      "emailPlaceholder": "your.email@example.com",
+      "subject": "Subject",
+      "subjectPlaceholder": "What's this about?",
+      "message": "Message",
+      "messagePlaceholder": "Tell me about your project or just say hello!",
+      "sending": "Sending...",
+      "send": "Send Message",
+      "success": "Message sent successfully! I'll get back to you soon."
+    },
+    "footer": {
+      "built": "Built with ❤️ using React.js, Bootstrap, and lots of creativity",
+      "copyright": "© 2024 Samyra. All rights reserved."
+    }
+  }
+}
