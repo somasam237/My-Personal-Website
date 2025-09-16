@@ -54,19 +54,19 @@ const Contact = () => {
     {
       icon: <FaEnvelope />,
       title: "Email",
-      value: "samyra@example.com",
-      link: "mailto:samyra@example.com"
+      value: "audreytafawoung@gmail.com",
+      link: "mailto:audreytafawoung@gmail.com"
     },
     {
       icon: <FaPhone />,
       title: "Phone",
-      value: "+1 (555) 123-4567",
-      link: "tel:+15551234567"
+      value: "+4915560704874",
+      link: "tel:+4915560704874"
     },
     {
       icon: <FaMapMarkerAlt />,
       title: "Location",
-      value: "Paris, France",
+      value: "Bingen, Germany",
       link: null
     }
   ];
@@ -75,21 +75,16 @@ const Contact = () => {
     {
       icon: <FaLinkedin />,
       name: "LinkedIn",
-      url: "https://linkedin.com",
+      url: "https://www.linkedin.com/in/samyra-audrey-tafawoung-2183bb1b3/",
       color: "#0077B5"
     },
     {
       icon: <FaGithub />,
       name: "GitHub",
-      url: "https://github.com",
+      url: "https://github.com/somasam237",
       color: "#333"
     },
-    {
-      icon: <FaTwitter />,
-      name: "Twitter",
-      url: "https://twitter.com",
-      color: "#1DA1F2"
-    }
+    
   ];
 
   const containerVariants = {
@@ -324,7 +319,7 @@ const Contact = () => {
                   Built with ❤️ using React.js, Bootstrap, and lots of creativity
                 </p>
                 <p className="copyright">
-                  © 2024 Samyra. All rights reserved.
+                  © 2025 Samyra. All rights reserved.
                 </p>
               </motion.div>
             </Col>

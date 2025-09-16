@@ -63,49 +63,100 @@
     }
   },
   "projects": {
-    "title": "Mes",
-    "projects": "Projets",
-    "subtitle": "Explorez mes derniers travaux et solutions créatives",
-    "filters": {
+    "title": "Projets",
+    "titleHighlight": "Phares",
+    "subtitle": "Démonstration de mon expertise en développement web moderne à travers des solutions innovantes",
+    "badges": {
+      "developer": "Développeuse Full-Stack",
+      "experience": "3+ Années d'Expérience",
+      "technologies": "10+ Technologies"
+    },
+    "categories": {
       "all": "Tous les Projets",
       "fullstack": "Full Stack",
       "frontend": "Frontend",
       "backend": "Backend"
     },
-    "items": {
-      "ecommerce": {
-        "title": "Plateforme E-Commerce",
-        "description": "Solution e-commerce full-stack avec React, Node.js et MongoDB. Comprend l'authentification utilisateur, le traitement des paiements et un tableau de bord admin."
-      },
-      "taskManager": {
-        "title": "App de Gestion de Tâches",
-        "description": "Application collaborative de gestion de tâches avec mises à jour en temps réel utilisant Socket.io. Construite avec React et Express."
-      },
-      "portfolio": {
-        "title": "Tableau de Bord Portfolio",
-        "description": "Tableau de bord portfolio moderne avec visualisation de données et analyses. Construit avec React et Chart.js."
-      },
-      "restApi": {
-        "title": "Service API REST",
-        "description": "API REST évolutive avec authentification, limitation de débit et documentation complète. Construite avec Express et MongoDB."
-      },
-      "weather": {
-        "title": "App Météo",
-        "description": "Belle application météo avec prévisions basées sur la localisation et cartes interactives. Design responsive pour tous les appareils."
-      },
-      "chat": {
-        "title": "Application de Chat",
-        "description": "Application de chat en temps réel avec messagerie privée, chats de groupe et partage de fichiers. Construite avec Socket.io et React."
-      }
-    },
     "buttons": {
-      "code": "Code",
-      "live": "Démo"
+      "viewProject": "Voir le Projet",
+      "sourceCode": "Code Source"
     },
     "cta": {
-      "title": "Intéressé(e) par une collaboration ?",
-      "description": "Je suis toujours ouverte à discuter de nouvelles opportunités et projets passionnants.",
-      "button": "Me Contacter"
+      "title": "Prêt à Travailler Ensemble ?",
+      "description": "Discutons de votre prochain projet et donnons vie à vos idées avec des technologies de pointe.",
+      "button": "Collaborons"
+    },
+    "ecommerce": {
+      "title": "Plateforme E-Commerce",
+      "subtitle": "Solution Enterprise Full-Stack",
+      "description": "Une plateforme e-commerce complète construite avec des technologies modernes, comprenant une authentification utilisateur avancée, un traitement de paiement sécurisé, une gestion d'inventaire en temps réel et un tableau de bord administrateur puissant.",
+      "duration": "3 mois",
+      "team": "Projet Solo",
+      "highlights": [
+        "🚀 Mises à jour d'inventaire en temps réel",
+        "💳 Intégration de paiement sécurisée",
+        "📊 Tableau de bord analytique avancé",
+        "🔐 Authentification multi-rôles"
+      ],
+      "challenges": "Implémentation d'une gestion d'état complexe et de fonctionnalités en temps réel",
+      "results": "Augmentation de l'engagement utilisateur de 40% et réduction de l'abandon de panier de 25%"
+    },
+    "airtrack": {
+      "title": "Système de Gestion AirTrack",
+      "subtitle": "Solution de Suivi de Vol en Temps Réel",
+      "description": "Un système avancé de suivi de vol utilisant l'API OpenSky Network pour des données de vol en direct. Comprend la surveillance en temps réel, l'optimisation des routes et des analyses complètes de vol avec intégration PostgreSQL.",
+      "duration": "2 mois",
+      "team": "Projet Solo",
+      "highlights": [
+        "✈️ Intégration de données de vol en direct",
+        "📍 Suivi en temps réel",
+        "📈 Analyses avancées",
+        "🗄️ Requêtes de base de données optimisées"
+      ],
+      "challenges": "Gestion de grands ensembles de données et limitation du taux d'API",
+      "results": "Traitement de plus de 10 000 enregistrements de vol avec 99,9% de précision"
+    },
+    "spotify": {
+      "title": "Clone Spotify",
+      "subtitle": "Application de Streaming Musical",
+      "description": "Un clone Spotify riche en fonctionnalités construit avec React et l'API Web Spotify. Comprend le streaming musical, la gestion de playlists, la fonctionnalité de recherche et un design responsive pour tous les appareils.",
+      "duration": "1 mois",
+      "team": "Projet Solo",
+      "highlights": [
+        "🎵 Intégration de streaming musical",
+        "🎨 Belle recréation d'interface",
+        "📱 Design entièrement responsive",
+        "🔍 Fonctionnalité de recherche avancée"
+      ],
+      "challenges": "Authentification API et gestion d'état",
+      "results": "Atteint 60% de similarité d'interface avec Spotify original"
+    },
+    "datawarehouse": {
+      "title": "Entrepôt de Données Protéines",
+      "subtitle": "Gestion de Données Bioinformatiques",
+      "description": "Un entrepôt de données moderne et interactif pour les données de structure protéique avec une interface web conviviale. Comprend l'authentification, une documentation complète et des capacités de requête avancées.",
+      "duration": "4 mois",
+      "team": "Projet Académique",
+      "highlights": [
+        "🧬 Visualisation de données complexes",
+        "🔬 Traitement de données scientifiques",
+        "📊 Graphiques interactifs",
+        "🔒 Accès sécurisé aux données"
+      ],
+      "challenges": "Gestion des relations complexes de données biologiques",
+      "results": "Réduction du temps de requête de données de 60% avec indexation optimisée"
+    },
+    "modal": {
+      "year": "Année",
+      "team": "Équipe",
+      "duration": "Durée",
+      "overview": "Aperçu du Projet",
+      "keyFeatures": "Fonctionnalités Clés",
+      "techStack": "Stack Technologique",
+      "results": "Résultats et Impact",
+      "challenges": "Défis",
+      "viewCode": "Voir le Code Source",
+      "liveDemo": "Démo Live"
     }
   },
   "contact": {

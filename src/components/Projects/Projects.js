@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react';
 import { Container, Row, Col, Card, Button, Badge, Modal } from 'react-bootstrap';
 import { motion, AnimatePresence, useInView } from 'framer-motion';
-import { FaGithub, FaExternalLinkAlt, FaCode, FaEye, FaPlay, FaStar, FaCalendar, FaUsers, FaTimes } from 'react-icons/fa';
+import { FaGithub, FaExternalLinkAlt, FaCode, FaEye, FaPlay, FaStar, FaCalendar, FaUsers, FaTimes, FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import { useTranslation } from 'react-i18next';
 import './Projects.css';
 
@@ -11,115 +11,110 @@ const airtrackImg = '/images/projectImages/airtrack.png';
 const spotifyImg = '/images/projectImages/spotify.png';
 const daweImg = '/images/projectImages/dawe.png';
 
+// Images additionnelles pour les galeries (placeholders pour maintenant)
+const createProjectGallery = (mainImage, projectName) => [
+  mainImage,
+  `/images/projectImages/${projectName}1.png`,
+  `/images/projectImages/${projectName}2.png`,
+  `/images/projectImages/${projectName}3.png`,
+  `/images/projectImages/${projectName}4.png`,
+  `/images/projectImages/${projectName}5.png`
+];
+
 const Projects = () => {
   const { t } = useTranslation();
   const [filter, setFilter] = useState('all');
   const [hoveredProject, setHoveredProject] = useState(null);
   const [selectedProject, setSelectedProject] = useState(null);
   const [showModal, setShowModal] = useState(false);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.2 });
 
   const projects = [
     {
       id: 1,
-      title: "E-Commerce Platform",
-      subtitle: "Full-Stack Enterprise Solution",
-      description: "A comprehensive e-commerce platform built with modern technologies, featuring advanced user authentication, secure payment processing, real-time inventory management, and a powerful admin dashboard.",
+      titleKey: "projects.ecommerce.title",
+      subtitleKey: "projects.ecommerce.subtitle",
+      descriptionKey: "projects.ecommerce.description",
       image: ecommerceImg,
-      technologies: ["React.js", "Node.js", "MongoDB", "Express", "Stripe", "JWT", "Socket.io"],
+      gallery: createProjectGallery(ecommerceImg, 'ecommerce'),
+      technologies: ["Html","Css","JavaScript", "Node.js", "MongoDB", "Express", "JWT"],
       category: "fullstack",
       github: "https://github.com/somasam237/e-commerce-Website.git",
       live: "https://example.com",
       featured: true,
       year: "2024",
-      duration: "3 months",
-      team: "Solo Project",
-      highlights: [
-        "🚀 Real-time inventory updates",
-        "💳 Secure payment integration",
-        "📊 Advanced analytics dashboard",
-        "🔐 Multi-role authentication"
-      ],
-      challenges: "Implemented complex state management and real-time features",
-      results: "Increased user engagement by 40% and reduced cart abandonment by 25%"
+      durationKey: "projects.ecommerce.duration",
+      teamKey: "projects.ecommerce.team",
+      highlightsKey: "projects.ecommerce.highlights",
+      challengesKey: "projects.ecommerce.challenges",
+      resultsKey: "projects.ecommerce.results"
     },
     {
       id: 2,
-      title: "AirTrack Management System",
-      subtitle: "Real-Time Flight Tracking Solution",
-      description: "An advanced flight tracking system utilizing OpenSky Network API for live flight data. Features include real-time monitoring, route optimization, and comprehensive flight analytics with PostgreSQL database integration.",
+      titleKey: "projects.airtrack.title",
+      subtitleKey: "projects.airtrack.subtitle",
+      descriptionKey: "projects.airtrack.description",
       image: airtrackImg,
-      technologies: ["Python", "Flask", "PostgreSQL", "OpenSky API", "Pandas", "Chart.js"],
+      gallery: createProjectGallery(airtrackImg, 'airtrack'),
+      technologies: ["Python", "Flask", "PostgreSQL", "OpenSky API", "Chart.js"],
       category: "fullstack",
       github: "https://github.com/somasam237/airtrack_new.git",
       live: "https://example.com",
       featured: true,
-      year: "2024",
-      duration: "2 months",
-      team: "Solo Project",
-      highlights: [
-        "✈️ Live flight data integration",
-        "📍 Real-time tracking",
-        "📈 Advanced analytics",
-        "🗄️ Optimized database queries"
-      ],
-      challenges: "Handling large datasets and API rate limiting",
-      results: "Processing 10,000+ flight records with 99.9% accuracy"
+      year: "2025",
+      durationKey: "projects.airtrack.duration",
+      teamKey: "projects.airtrack.team",
+      highlightsKey: "projects.airtrack.highlights",
+      challengesKey: "projects.airtrack.challenges",
+      resultsKey: "projects.airtrack.results"
     },
     {
       id: 3,
-      title: "Spotify Clone",
-      subtitle: "Music Streaming Application",
-      description: "A feature-rich Spotify clone built with React and Spotify Web API. Includes music streaming, playlist management, search functionality, and responsive design for all devices.",
+      titleKey: "projects.spotify.title",
+      subtitleKey: "projects.spotify.subtitle",
+      descriptionKey: "projects.spotify.description",
       image: spotifyImg,
+      gallery: createProjectGallery(spotifyImg, 'spotify'),
       technologies: ["React.js", "Spotify API", "CSS3", "JavaScript", "Context API"],
       category: "frontend",
       github: "https://github.com/somasam237/spotify-clone.git",
       live: "https://example.com",
       featured: false,
       year: "2024",
-      duration: "1 month",
-      team: "Solo Project",
-      highlights: [
-        "🎵 Music streaming integration",
-        "🎨 Pixel-perfect UI recreation",
-        "📱 Fully responsive design",
-        "🔍 Advanced search functionality"
-      ],
-      challenges: "API authentication and state management",
-      results: "Achieved 98% UI similarity to original Spotify"
+      durationKey: "projects.spotify.duration",
+      teamKey: "projects.spotify.team",
+      highlightsKey: "projects.spotify.highlights",
+      challengesKey: "projects.spotify.challenges",
+      resultsKey: "projects.spotify.results"
     },
     {
       id: 4,
-      title: "Protein Datawarehouse",
-      subtitle: "Bioinformatics Data Management",
-      description: "A modern, interactive data warehouse for protein structure data with a user-friendly web interface. Features authentication, comprehensive documentation, and advanced querying capabilities.",
+      titleKey: "projects.datawarehouse.title",
+      subtitleKey: "projects.datawarehouse.subtitle",
+      descriptionKey: "projects.datawarehouse.description",
       image: daweImg,
+      gallery: createProjectGallery(daweImg, 'dawe'),
       technologies: ["React.js", "Node.js", "Express", "PostgreSQL", "JWT", "D3.js"],
       category: "fullstack",
       github: "https://github.com/somasam237/DatawarehouseSS2025.git",
       live: null,
       featured: true,
-      year: "2024",
-      duration: "4 months",
-      team: "Academic Project",
-      highlights: [
-        "🧬 Complex data visualization",
-        "🔬 Scientific data processing",
-        "📊 Interactive charts",
-        "🔒 Secure data access"
-      ],
-      challenges: "Managing complex biological data relationships",
-      results: "Reduced data query time by 60% with optimized indexing"
+      year: "2025",
+      durationKey: "projects.datawarehouse.duration",
+      teamKey: "projects.datawarehouse.team",
+      highlightsKey: "projects.datawarehouse.highlights",
+      challengesKey: "projects.datawarehouse.challenges",
+      resultsKey: "projects.datawarehouse.results"
     }
   ];
 
   const categories = [
-    { key: 'all', label: 'All Projects', icon: '🚀' },
-    { key: 'fullstack', label: 'Full Stack', icon: '💻' },
-    { key: 'frontend', label: 'Frontend', icon: '🎨' },
-    { key: 'backend', label: 'Backend', icon: '⚙️' }
+    { key: 'all', labelKey: 'projects.categories.all', icon: '🚀' },
+    { key: 'fullstack', labelKey: 'projects.categories.fullstack', icon: '💻' },
+    { key: 'frontend', labelKey: 'projects.categories.frontend', icon: '🎨' },
+    { key: 'backend', labelKey: 'projects.categories.backend', icon: '⚙️' }
   ];
 
   const filteredProjects = filter === 'all' 
@@ -128,12 +123,34 @@ const Projects = () => {
 
   const openModal = (project) => {
     setSelectedProject(project);
+    setCurrentImageIndex(0);
     setShowModal(true);
   };
 
   const closeModal = () => {
     setShowModal(false);
     setSelectedProject(null);
+    setCurrentImageIndex(0);
+  };
+
+  const nextImage = () => {
+    if (selectedProject && selectedProject.gallery) {
+      setCurrentImageIndex((prev) => 
+        prev === selectedProject.gallery.length - 1 ? 0 : prev + 1
+      );
+    }
+  };
+
+  const prevImage = () => {
+    if (selectedProject && selectedProject.gallery) {
+      setCurrentImageIndex((prev) => 
+        prev === 0 ? selectedProject.gallery.length - 1 : prev - 1
+      );
+    }
+  };
+
+  const selectImage = (index) => {
+    setCurrentImageIndex(index);
   };
 
   // Animation variants
@@ -189,30 +206,30 @@ const Projects = () => {
           className="projects-header text-center mb-5"
         >
           <h2 className="section-title">
-            Featured <span className="futuristic-text">Projects</span>
+            {t('projects.title')} <span className="futuristic-text">{t('projects.titleHighlight')}</span>
           </h2>
           <div className="title-underline"></div>
           <p className="section-subtitle">
-            Showcasing my expertise in modern web development through innovative solutions
+            {t('projects.subtitle')}
           </p>
           <div className="expertise-badges">
             <motion.span 
               className="expertise-badge"
               whileHover={{ scale: 1.05, boxShadow: "0 0 20px rgba(255, 20, 147, 0.4)" }}
             >
-              Full-Stack Developer
+              {t('projects.badges.developer')}
             </motion.span>
             <motion.span 
               className="expertise-badge"
               whileHover={{ scale: 1.05, boxShadow: "0 0 20px rgba(255, 20, 147, 0.4)" }}
             >
-              3+ Years Experience
+              {t('projects.badges.experience')}
             </motion.span>
             <motion.span 
               className="expertise-badge"
               whileHover={{ scale: 1.05, boxShadow: "0 0 20px rgba(255, 20, 147, 0.4)" }}
             >
-              10+ Technologies
+              {t('projects.badges.technologies')}
             </motion.span>
           </div>
         </motion.div>
@@ -238,7 +255,7 @@ const Projects = () => {
               transition={{ type: "spring", stiffness: 400, damping: 17 }}
             >
               <span className="filter-icon">{category.icon}</span>
-              {category.label}
+              {t(category.labelKey)}
             </motion.button>
           ))}
         </motion.div>
@@ -341,15 +358,15 @@ const Projects = () => {
                         </div>
 
                         <Card.Title className="project-title">
-                          {project.title}
+                          {t(project.titleKey)}
                         </Card.Title>
                         
                         <Card.Subtitle className="project-subtitle mb-3">
-                          {project.subtitle}
+                          {t(project.subtitleKey)}
                         </Card.Subtitle>
 
                         <Card.Text className="project-description">
-                          {project.description.substring(0, 120)}...
+                          {t(project.descriptionKey).substring(0, 120)}...
                         </Card.Text>
 
                         {/* Technologies */}
@@ -386,7 +403,7 @@ const Projects = () => {
                             whileTap={{ scale: 0.95 }}
                           >
                             <FaPlay />
-                            View Project
+                            {t('projects.buttons.viewProject')}
                           </motion.button>
                           
                           <motion.a
@@ -398,7 +415,7 @@ const Projects = () => {
                             whileTap={{ scale: 0.95 }}
                           >
                             <FaCode />
-                            Source Code
+                            {t('projects.buttons.sourceCode')}
                           </motion.a>
                         </div>
                       </Card.Body>
@@ -417,9 +434,9 @@ const Projects = () => {
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
           transition={{ delay: 1, duration: 0.8 }}
         >
-          <h3 className="cta-title">Ready to Work Together?</h3>
+          <h3 className="cta-title">{t('projects.cta.title')}</h3>
           <p className="cta-description">
-            Let's discuss your next project and bring your ideas to life with cutting-edge technology.
+            {t('projects.cta.description')}
           </p>
           <motion.button
             className="cta-button futuristic-btn"
@@ -431,12 +448,12 @@ const Projects = () => {
             whileTap={{ scale: 0.95 }}
           >
             <FaUsers />
-            Let's Collaborate
+            {t('projects.cta.button')}
           </motion.button>
         </motion.div>
       </Container>
 
-      {/* Project Detail Modal */}
+      {/* Project Detail Modal with Gallery */}
       <AnimatePresence>
         {showModal && selectedProject && (
           <Modal 
@@ -455,8 +472,8 @@ const Projects = () => {
             >
               <Modal.Header className="modal-header-custom">
                 <div className="modal-title-section">
-                  <Modal.Title>{selectedProject.title}</Modal.Title>
-                  <p className="modal-subtitle">{selectedProject.subtitle}</p>
+                  <Modal.Title>{t(selectedProject.titleKey)}</Modal.Title>
+                  <p className="modal-subtitle">{t(selectedProject.subtitleKey)}</p>
                 </div>
                 <motion.button 
                   className="close-btn"
@@ -470,55 +487,112 @@ const Projects = () => {
               
               <Modal.Body className="modal-body-custom">
                 <Row>
-                  <Col lg={6}>
-                    <div className="modal-image-container">
-                      <img 
-                        src={selectedProject.image} 
-                        alt={selectedProject.title}
-                        className="modal-image"
-                      />
+                  <Col lg={7}>
+                    {/* Image Gallery */}
+                    <div className="modal-gallery">
+                      <div className="main-image-container">
+                        <motion.img 
+                          key={currentImageIndex}
+                          src={selectedProject.gallery[currentImageIndex]} 
+                          alt={`${t(selectedProject.titleKey)} - Image ${currentImageIndex + 1}`}
+                          className="main-modal-image"
+                          initial={{ opacity: 0, x: 50 }}
+                          animate={{ opacity: 1, x: 0 }}
+                          exit={{ opacity: 0, x: -50 }}
+                          transition={{ duration: 0.3 }}
+                          onError={(e) => {
+                            e.target.src = selectedProject.image;
+                          }}
+                        />
+                        
+                        {/* Navigation Arrows */}
+                        <motion.button 
+                          className="gallery-nav prev"
+                          onClick={prevImage}
+                          whileHover={{ scale: 1.1, x: -5 }}
+                          whileTap={{ scale: 0.9 }}
+                        >
+                          <FaChevronLeft />
+                        </motion.button>
+                        
+                        <motion.button 
+                          className="gallery-nav next"
+                          onClick={nextImage}
+                          whileHover={{ scale: 1.1, x: 5 }}
+                          whileTap={{ scale: 0.9 }}
+                        >
+                          <FaChevronRight />
+                        </motion.button>
+                        
+                        {/* Image Counter */}
+                        <div className="image-counter">
+                          {currentImageIndex + 1} / {selectedProject.gallery.length}
+                        </div>
+                      </div>
+                      
+                      {/* Thumbnail Gallery */}
+                      <div className="thumbnail-gallery">
+                        {selectedProject.gallery.map((image, index) => (
+                          <motion.div
+                            key={index}
+                            className={`thumbnail ${index === currentImageIndex ? 'active' : ''}`}
+                            onClick={() => selectImage(index)}
+                            whileHover={{ scale: 1.05, y: -3 }}
+                            whileTap={{ scale: 0.95 }}
+                          >
+                            <img 
+                              src={image} 
+                              alt={`Thumbnail ${index + 1}`}
+                              onError={(e) => {
+                                e.target.src = selectedProject.image;
+                              }}
+                            />
+                            <div className="thumbnail-overlay"></div>
+                          </motion.div>
+                        ))}
+                      </div>
                     </div>
                   </Col>
                   
-                  <Col lg={6}>
+                  <Col lg={5}>
                     <div className="modal-content">
                       <div className="project-details">
                         <div className="detail-item">
                           <FaCalendar className="detail-icon" />
                           <div>
-                            <strong>Year:</strong> {selectedProject.year}
+                            <strong>{t('projects.modal.year')}:</strong> {selectedProject.year}
                           </div>
                         </div>
                         <div className="detail-item">
                           <FaUsers className="detail-icon" />
                           <div>
-                            <strong>Team:</strong> {selectedProject.team}
+                            <strong>{t('projects.modal.team')}:</strong> {t(selectedProject.teamKey)}
                           </div>
                         </div>
                         <div className="detail-item">
                           <span className="detail-icon">⏱️</span>
                           <div>
-                            <strong>Duration:</strong> {selectedProject.duration}
+                            <strong>{t('projects.modal.duration')}:</strong> {t(selectedProject.durationKey)}
                           </div>
                         </div>
                       </div>
 
                       <div className="project-description-full">
-                        <h5>Project Overview</h5>
-                        <p>{selectedProject.description}</p>
+                        <h5>{t('projects.modal.overview')}</h5>
+                        <p>{t(selectedProject.descriptionKey)}</p>
                       </div>
 
                       <div className="project-highlights">
-                        <h5>Key Features</h5>
+                        <h5>{t('projects.modal.keyFeatures')}</h5>
                         <ul>
-                          {selectedProject.highlights.map((highlight, index) => (
+                          {t(selectedProject.highlightsKey, { returnObjects: true }).map((highlight, index) => (
                             <li key={index}>{highlight}</li>
                           ))}
                         </ul>
                       </div>
 
                       <div className="project-tech-stack">
-                        <h5>Technology Stack</h5>
+                        <h5>{t('projects.modal.techStack')}</h5>
                         <div className="tech-list">
                           {selectedProject.technologies.map((tech, index) => (
                             <span key={index} className="tech-item">{tech}</span>
@@ -527,8 +601,13 @@ const Projects = () => {
                       </div>
 
                       <div className="project-results">
-                        <h5>Results & Impact</h5>
-                        <p>{selectedProject.results}</p>
+                        <h5>{t('projects.modal.results')}</h5>
+                        <p>{t(selectedProject.resultsKey)}</p>
+                      </div>
+
+                      <div className="project-challenges">
+                        <h5>{t('projects.modal.challenges')}</h5>
+                        <p>{t(selectedProject.challengesKey)}</p>
                       </div>
 
                       <div className="modal-actions">
@@ -541,7 +620,7 @@ const Projects = () => {
                           whileTap={{ scale: 0.95 }}
                         >
                           <FaGithub />
-                          View Source Code
+                          {t('projects.modal.viewCode')}
                         </motion.a>
                         
                         {selectedProject.live && (
@@ -554,7 +633,7 @@ const Projects = () => {
                             whileTap={{ scale: 0.95 }}
                           >
                             <FaExternalLinkAlt />
-                            Live Demo
+                            {t('projects.modal.liveDemo')}
                           </motion.a>
                         )}
                       </div>
