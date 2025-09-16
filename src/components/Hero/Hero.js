@@ -95,14 +95,15 @@ const Hero = () => {
                 </Button>
               </motion.div>
               
+              // the motion is for animation. and it's really cool!
               <motion.div variants={socialVariants} className="social-links">
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="social-link">
+                <a href="https://github.com/somasam237" target="_blank" rel="noopener noreferrer" className="social-link">
                   <FaGithub />
                 </a>
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="social-link">
+                <a href="https://www.linkedin.com/in/samyra-audrey-tafawoung-2183bb1b3/" target="_blank" rel="noopener noreferrer" className="social-link">
                   <FaLinkedin />
                 </a>
-                <a href="mailto:your.email@example.com" className="social-link">
+                <a href="mailto:your.audreytafawoung@gmail.com" className="social-link">
                   <FaEnvelope />
                 </a>
               </motion.div>
