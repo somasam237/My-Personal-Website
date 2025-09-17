@@ -93,12 +93,11 @@
       "duration": "3 mois",
       "team": "Projet Solo",
       "highlights": [
-        "🚀 Mises à jour d'inventaire en temps réel",
-        "💳 Intégration de paiement sécurisée",
-        "📊 Tableau de bord analytique avancé",
-        "🔐 Authentification multi-rôles"
+        "🚀 Mises à jour d'inventaire en temps réel", 
+        "📊 Gestion de panier",
+        "🔐 Authentification"
       ],
-      "challenges": "Implémentation d'une gestion d'état complexe et de fonctionnalités en temps réel",
+      "challenges": "Implémentation d'une gestion d'état et de fonctionnalités en temps réel",
       "results": "Augmentation de l'engagement utilisateur de 40% et réduction de l'abandon de panier de 25%"
     },
     "airtrack": {
@@ -114,7 +113,7 @@
         "🗄️ Requêtes de base de données optimisées"
       ],
       "challenges": "Gestion de grands ensembles de données et limitation du taux d'API",
-      "results": "Traitement de plus de 10 000 enregistrements de vol avec 99,9% de précision"
+      "results": "Traitement de plus de 1000 enregistrements de vol avec 99,9% de précision"
     },
     "spotify": {
       "title": "Clone Spotify",
@@ -135,7 +134,7 @@
       "title": "Entrepôt de Données Protéines",
       "subtitle": "Gestion de Données Bioinformatiques",
       "description": "Un entrepôt de données moderne et interactif pour les données de structure protéique avec une interface web conviviale. Comprend l'authentification, une documentation complète et des capacités de requête avancées.",
-      "duration": "4 mois",
+      "duration": "1 mois",
       "team": "Projet Académique",
       "highlights": [
         "🧬 Visualisation de données complexes",
@@ -189,7 +188,7 @@
     },
     "footer": {
       "built": "Créé avec ❤️ en utilisant React.js, Bootstrap et beaucoup de créativité",
-      "copyright": "© 2024 Samyra. Tous droits réservés."
+      "copyright": "© 2025 Samyra. Tous droits réservés."
     }
   }
 }

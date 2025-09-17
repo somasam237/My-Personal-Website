@@ -94,9 +94,8 @@
       "team": "Solo-Projekt",
       "highlights": [
         "🚀 Echtzeit-Bestandsaktualisierungen",
-        "💳 Sichere Zahlungsintegration",
-        "📊 Erweiterte Analyse-Dashboard",
-        "🔐 Multi-Rollen-Authentifizierung"
+        "📊 WARENKORB VERWALTUNG",
+        "🔐 Authentifizierung"
       ],
       "challenges": "Implementierung komplexer Zustandsverwaltung und Echtzeit-Features",
       "results": "Erhöhung der Benutzerinteraktion um 40% und Reduzierung des Warenkorbabbruchs um 25%"
@@ -114,7 +113,7 @@
         "🗄️ Optimierte Datenbankabfragen"
       ],
       "challenges": "Umgang mit großen Datensätzen und API-Rate-Limiting",
-      "results": "Verarbeitung von über 10.000 Flugdatensätzen mit 99,9% Genauigkeit"
+      "results": "Verarbeitung von über 10.000 Flugdatensätzen"
     },
     "spotify": {
       "title": "Spotify Klon",
@@ -126,7 +125,7 @@
         "🎵 Musik-Streaming-Integration",
         "🎨 Schöne UI-Nachbildung",
         "📱 Vollständig responsives Design",
-        "🔍 Erweiterte Suchfunktionalität"
+        "🔍 Suchfunktionalität"
       ],
       "challenges": "API-Authentifizierung und Zustandsverwaltung",
       "results": "Erreichte 60% UI-Ähnlichkeit mit dem ursprünglichen Spotify"
@@ -135,12 +134,12 @@
       "title": "Protein-Datenwarehouse",
       "subtitle": "Bioinformatik-Datenmanagement",
       "description": "Ein modernes, interaktives Datenwarehouse für Proteinstrukturdaten mit einer benutzerfreundlichen Web-Oberfläche. Beinhaltet Authentifizierung, umfassende Dokumentation und erweiterte Abfragefunktionen.",
-      "duration": "4 Monate",
+      "duration": "1 Monate",
       "team": "Akademisches Projekt",
       "highlights": [
-        "🧬 Komplexe Datenvisualisierung",
+        "🧬 Datenvisualisierung",
         "🔬 Wissenschaftliche Datenverarbeitung",
-        "📊 Interaktive Diagramme",
+        "📊 API Integration",
         "🔒 Sicherer Datenzugriff"
       ],
       "challenges": "Verwaltung komplexer biologischer Datenbeziehungen",
@@ -189,7 +188,7 @@
     },
     "footer": {
       "built": "Erstellt mit ❤️ unter Verwendung von React.js, Bootstrap und viel Kreativität",
-      "copyright": "© 2024 Samyra. Alle Rechte vorbehalten."
+      "copyright": "© 2025 Samyra. Alle Rechte vorbehalten."
     }
   }
 }

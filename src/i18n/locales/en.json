@@ -93,12 +93,11 @@
       "duration": "3 months",
       "team": "Solo Project",
       "highlights": [
-        "🚀 Real-time inventory updates",
-        "💳 Secure payment integration",
-        "📊 Advanced analytics dashboard",
-        "🔐 Multi-role authentication"
+        "🚀 Real-time inventory updates", 
+        "📊 Cart Management",
+        "🔐 Authentication"
       ],
-      "challenges": "Implemented complex state management and real-time features",
+      "challenges": "Implemented state management and real-time features",
       "results": "Increased user engagement by 40% and reduced cart abandonment by 25%"
     },
     "airtrack": {
@@ -110,11 +109,11 @@
       "highlights": [
         "✈️ Live flight data integration",
         "📍 Real-time tracking",
-        "📈 Advanced analytics",
+        "📈 Analytics",
         "🗄️ Optimized database queries"
       ],
       "challenges": "Handling large datasets and API rate limiting",
-      "results": "Processing 10,000+ flight records with 99.9% accuracy"
+      "results": "Processing 1000+ flight records with 70% accuracy"
     },
     "spotify": {
       "title": "Spotify Clone",
@@ -126,7 +125,7 @@
         "🎵 Music streaming integration",
         "🎨 Beautiful UI recreation",
         "📱 Fully responsive design",
-        "🔍 Advanced search functionality"
+        "🔍 Search functionality"
       ],
       "challenges": "API authentication and state management",
       "results": "Achieved 60% UI similarity to original Spotify"
@@ -135,12 +134,12 @@
       "title": "Protein Datawarehouse",
       "subtitle": "Bioinformatics Data Management",
       "description": "A modern, interactive data warehouse for protein structure data with a user-friendly web interface. Features authentication, comprehensive documentation, and advanced querying capabilities.",
-      "duration": "4 months",
+      "duration": "2 months",
       "team": "Academic Project",
       "highlights": [
-        "🧬 Complex data visualization",
+        "🧬 Data visualization",
         "🔬 Scientific data processing",
-        "📊 Interactive charts",
+        "📊 API Integration",
         "🔒 Secure data access"
       ],
       "challenges": "Managing complex biological data relationships",
@@ -189,7 +188,7 @@
     },
     "footer": {
       "built": "Built with ❤️ using React.js, Bootstrap, and lots of creativity",
-      "copyright": "© 2024 Samyra. All rights reserved."
+      "copyright": "© 2025 Samyra. All rights reserved."
     }
   }
 }
