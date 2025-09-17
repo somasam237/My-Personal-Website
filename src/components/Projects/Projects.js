@@ -44,7 +44,7 @@ const Projects = () => {
       github: "https://github.com/somasam237/e-commerce-Website.git",
       live: "https://example.com",
       featured: true,
-      year: "2024",
+      year: "2023",
       durationKey: "projects.ecommerce.duration",
       teamKey: "projects.ecommerce.team",
       highlightsKey: "projects.ecommerce.highlights",
