@@ -5,13 +5,16 @@ import 'aos/dist/aos.css';
 import './App.css';
 import './i18n/i18n';
 
-// Components
+// Components for the menu
 import Header from './components/Header/Header';
 import Hero from './components/Hero/Hero';
 import About from './components/About/About';
 import Skills from './components/Skills/Skills';
 import Projects from './components/Projects/Projects';
 import Contact from './components/Contact/Contact';
+
+//Writings
+import Writing from './pages/Blog/writing';
 import ImageGallery from './components/ImageGallery/ImageGallery';
 
 import ParticlesBackground from './components/ParticlesBackground/ParticlesBackground';

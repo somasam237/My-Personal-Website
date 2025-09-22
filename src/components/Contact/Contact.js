@@ -12,9 +12,11 @@ import {
   FaUser,
   FaEdit
 } from 'react-icons/fa';
+import { useTranslation } from 'react-i18next';
 import './Contact.css';
 
 const Contact = () => {
+  const { t } = useTranslation();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -53,19 +55,19 @@ const Contact = () => {
   const contactInfo = [
     {
       icon: <FaEnvelope />,
-      title: "Email",
+      title: t('contact.info.email'),
       value: "audreytafawoung@gmail.com",
       link: "mailto:audreytafawoung@gmail.com"
     },
     {
       icon: <FaPhone />,
-      title: "Phone",
+      title: t('contact.info.phone'),
       value: "+4915560704874",
       link: "tel:+4915560704874"
     },
     {
       icon: <FaMapMarkerAlt />,
-      title: "Location",
+      title: t('contact.info.location'),
       value: "Bingen, Germany",
       link: null
     }
@@ -122,11 +124,11 @@ const Contact = () => {
             <Col lg={12} className="text-center mb-5">
               <motion.div variants={itemVariants}>
                 <h2 className="section-title">
-                  Get In <span className="futuristic-text">Touch</span>
+                  {t('contact.title')} <span className="futuristic-text">{t('contact.touch')}</span>
                 </h2>
                 <div className="title-underline"></div>
                 <p className="section-subtitle">
-                  Ready to start your next project? Let's work together to create something amazing!
+                  {t('contact.subtitle')}
                 </p>
               </motion.div>
             </Col>
@@ -136,10 +138,9 @@ const Contact = () => {
             {/* Contact Information */}
             <Col lg={5} className="mb-5">
               <motion.div variants={itemVariants} className="contact-info">
-                <h3 className="info-title">Let's Connect</h3>
+                <h3 className="info-title">{t('contact.info.title')}</h3>
                 <p className="info-description">
-                  I'm always excited to discuss new opportunities, creative projects, 
-                  or just have a chat about technology and development.
+                  {t('contact.info.description')}
                 </p>
 
                 <div className="contact-methods">
@@ -168,7 +169,7 @@ const Contact = () => {
                 </div>
 
                 <div className="social-section">
-                  <h4 className="social-title">Follow Me</h4>
+                  <h4 className="social-title">{t('contact.social.title')}</h4>
                   <div className="social-links">
                     {socialLinks.map((social, index) => (
                       <motion.a
@@ -195,7 +196,7 @@ const Contact = () => {
             {/* Contact Form */}
             <Col lg={7}>
               <motion.div variants={itemVariants} className="contact-form-container glass-effect">
-                <h3 className="form-title">Send Me a Message</h3>
+                <h3 className="form-title">{t('contact.form.title')}</h3>
                 
                 {showAlert && (
                   <motion.div
@@ -205,7 +206,7 @@ const Contact = () => {
                   >
                     <Alert variant="success" className="custom-alert">
                       <FaPaperPlane className="me-2" />
-                      Message sent successfully! I'll get back to you soon.
+                      {t('contact.form.success')}
                     </Alert>
                   </motion.div>
                 )}
@@ -216,14 +217,14 @@ const Contact = () => {
                       <Form.Group className="mb-4">
                         <Form.Label className="form-label">
                           <FaUser className="me-2" />
-                          Full Name
+                          {t('contact.form.name')}
                         </Form.Label>
                         <Form.Control
                           type="text"
                           name="name"
                           value={formData.name}
                           onChange={handleInputChange}
-                          placeholder="Your full name"
+                          placeholder={t('contact.form.namePlaceholder')}
                           className="futuristic-input"
                           required
                         />
@@ -233,14 +234,14 @@ const Contact = () => {
                       <Form.Group className="mb-4">
                         <Form.Label className="form-label">
                           <FaEnvelope className="me-2" />
-                          Email Address
+                          {t('contact.form.email')}
                         </Form.Label>
                         <Form.Control
                           type="email"
                           name="email"
                           value={formData.email}
                           onChange={handleInputChange}
-                          placeholder="your.email@example.com"
+                          placeholder={t('contact.form.emailPlaceholder')}
                           className="futuristic-input"
                           required
                         />
@@ -251,14 +252,14 @@ const Contact = () => {
                   <Form.Group className="mb-4">
                     <Form.Label className="form-label">
                       <FaEdit className="me-2" />
-                      Subject
+                      {t('contact.form.subject')}
                     </Form.Label>
                     <Form.Control
                       type="text"
                       name="subject"
                       value={formData.subject}
                       onChange={handleInputChange}
-                      placeholder="What's this about?"
+                      placeholder={t('contact.form.subjectPlaceholder')}
                       className="futuristic-input"
                       required
                     />
@@ -267,7 +268,7 @@ const Contact = () => {
                   <Form.Group className="mb-4">
                     <Form.Label className="form-label">
                       <FaEdit className="me-2" />
-                      Message
+                      {t('contact.form.message')}
                     </Form.Label>
                     <Form.Control
                       as="textarea"
@@ -275,7 +276,7 @@ const Contact = () => {
                       name="message"
                       value={formData.message}
                       onChange={handleInputChange}
-                      placeholder="Tell me about your project or just say hello!"
+                      placeholder={t('contact.form.messagePlaceholder')}
                       className="futuristic-input"
                       required
                     />
@@ -293,12 +294,12 @@ const Contact = () => {
                       {isSubmitting ? (
                         <>
                           <div className="loading-spinner me-2"></div>
-                          Sending...
+                          {t('contact.form.sending')}
                         </>
                       ) : (
                         <>
                           <FaPaperPlane className="me-2" />
-                          Send Message
+                          {t('contact.form.send')}
                         </>
                       )}
                     </Button>
@@ -316,10 +317,10 @@ const Contact = () => {
                 className="contact-footer text-center"
               >
                 <p className="footer-text">
-                  Built with ❤️ using React.js, Bootstrap, and lots of creativity
+                  {t('contact.footer.built')}
                 </p>
                 <p className="copyright">
-                  © 2025 Samyra. All rights reserved.
+                  {t('contact.footer.copyright')}
                 </p>
               </motion.div>
             </Col>
