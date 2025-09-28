@@ -133,13 +133,13 @@ const About = () => {
                     <div className="code-line indent">
                       <span className="property">name</span>
                       <span className="operator">: </span>
-                      <span className="string">"Samyra"</span>
+                      <span className="string">"Samyra Tafawoung"</span>
                       <span className="operator">,</span>
                     </div>
                     <div className="code-line indent">
                       <span className="property">role</span>
                       <span className="operator">: </span>
-                      <span className="string">"Full Stack Developer"</span>
+                      <span className="string">"Student and Full Stack Developer"</span>
                       <span className="operator">,</span>
                     </div>
                     <div className="code-line indent">
@@ -148,14 +148,14 @@ const About = () => {
                       <span className="bracket">[</span>
                       <span className="string">"React"</span>
                       <span className="operator">, </span>
-                      <span className="string">"Node.js"</span>
+                      <span className="string">"Node.js"</span> 
                       <span className="bracket">]</span>
                       <span className="operator">,</span>
                     </div>
                     <div className="code-line indent">
                       <span className="property">passion</span>
                       <span className="operator">: </span>
-                      <span className="string">"Building the future"</span>
+                      <span className="string">"Building my future"</span>
                     </div>
                     <div className="code-line">
                       <span className="bracket">{'}'}</span>

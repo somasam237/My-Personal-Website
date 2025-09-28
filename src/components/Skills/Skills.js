@@ -66,25 +66,25 @@ const Skills = () => {
     {
       category: t('skills.categories.frontend'),
       items: [
-        { name: "React.js", icon: <FaReact />, percentage: 95, color: "#61DAFB" },
-        { name: "JavaScript", icon: <FaJs />, percentage: 90, color: "#F7DF1E" },
+        { name: "React.js", icon: <FaReact />, percentage: 50, color: "#61DAFB" },
+        { name: "JavaScript", icon: <FaJs />, percentage: 50, color: "#F7DF1E" },
         { name: "TypeScript", icon: <SiTypescript />, percentage: 85, color: "#3178C6" },
-        { name: "HTML5", icon: <FaHtml5 />, percentage: 95, color: "#E34F26" },
+        { name: "HTML5", icon: <FaHtml5 />, percentage: 85, color: "#060201ff" },
         { name: "CSS3", icon: <FaCss3Alt />, percentage: 90, color: "#1572B6" },
-        { name: "Bootstrap", icon: <SiBootstrap />, percentage: 88, color: "#7952B3" },
-        { name: "Tailwind CSS", icon: <SiTailwindcss />, percentage: 85, color: "#38B2AC" },
-        { name: "Next.js", icon: <SiNextdotjs />, percentage: 80, color: "#000000" }
+        { name: "Bootstrap", icon: <SiBootstrap />, percentage: 50, color: "#7952B3" },
+        { name: "Tailwind CSS", icon: <SiTailwindcss />, percentage: 50, color: "#38B2AC" },
+        { name: "Next.js", icon: <SiNextdotjs />, percentage: 20, color: "#000000" }
       ]
     },
     {
       category: t('skills.categories.backend'),
       items: [
-        { name: "Node.js", icon: <FaNodeJs />, percentage: 90, color: "#339933" },
-        { name: "Express.js", icon: <SiExpress />, percentage: 88, color: "#000000" },
-        { name: "MongoDB", icon: <SiMongodb />, percentage: 85, color: "#47A248" },
-        { name: "PostgreSQL", icon: <SiPostgresql />, percentage: 80, color: "#336791" },
-        { name: "REST APIs", icon: <FaServer />, percentage: 92, color: "#FF6B6B" },
-        { name: "Database Design", icon: <FaDatabase />, percentage: 85, color: "#4ECDC4" }
+        { name: "Node.js", icon: <FaNodeJs />, percentage: 60, color: "#339933" },
+        { name: "Express.js", icon: <SiExpress />, percentage: 50, color: "#000000" },
+        { name: "MongoDB", icon: <SiMongodb />, percentage: 50, color: "#47A248" },
+        { name: "PostgreSQL", icon: <SiPostgresql />, percentage: 50, color: "#336791" },
+        { name: "REST APIs", icon: <FaServer />, percentage: 51, color: "#FF6B6B" },
+        { name: "Database Design", icon: <FaDatabase />, percentage: 50, color: "#4ECDC4" }
       ]
     },
     {

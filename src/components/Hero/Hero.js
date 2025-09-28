@@ -95,8 +95,7 @@ const Hero = () => {
                 </Button>
               </motion.div>
               
-              // the motion is for animation. and it's really cool!
-              <motion.div variants={socialVariants} className="social-links">
+                <motion.div variants={socialVariants} className="social-links">
                 <a href="https://github.com/somasam237" target="_blank" rel="noopener noreferrer" className="social-link">
                   <FaGithub />
                 </a>
@@ -106,6 +105,7 @@ const Hero = () => {
                 <a href="mailto:your.audreytafawoung@gmail.com" className="social-link">
                   <FaEnvelope />
                 </a>
+                
               </motion.div>
             </motion.div>
           </Col>
@@ -117,8 +117,7 @@ const Hero = () => {
               transition={{ delay: 0.5, duration: 1 }}
               className="hero-avatar"
             >
-              <div className="avatar-container">
-                <div className="avatar-glow"></div>
+              <div className="avatar-container"> 
                 <div className="code-lines">
                   <div className="code-line"></div>
                   <div className="code-line"></div>
