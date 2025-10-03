@@ -101,11 +101,11 @@ const About = () => {
                     <span className="stat-label">{t('about.stats.experience')}</span>
                   </div>
                   <div className="stat-item">
-                    <span className="stat-number">50+</span>
+                    <span className="stat-number">10+</span>
                     <span className="stat-label">{t('about.stats.projects')}</span>
                   </div>
                   <div className="stat-item">
-                    <span className="stat-number">100%</span>
+                    <span className="stat-number">70%</span>
                     <span className="stat-label">{t('about.stats.satisfaction')}</span>
                   </div>
                 </div>
